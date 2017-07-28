@@ -1,0 +1,17 @@
+{
+  "name": "tda",
+  "version": "0.0.1",
+  "description": "Touch device app template",
+  "main": "app.js",
+  "scripts": {
+    "web": "node scripts/web.js",
+    "electron": "electron device"
+  },
+  "author": "allidylls@gmail.com",
+  "license": "MPL",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.15.0",
+    "electron": "^1.6.11"
+  }
+}

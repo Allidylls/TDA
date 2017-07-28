@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Touch Device App Template</title>
+	<link rel="stylesheet" href="lib/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" />
+	<link rel="stylesheet" href="lib/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" />
+	<link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+    <script src="js/jquery.before.js"></script>
+    <script src="lib/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.after.js"></script>
+    <script src="lib/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+    <script src="lib/jquery.backstretch.min.js"></script>
+    <script src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <h1>Touch Device App Template</h1>
+    </header>
+
+    <div class="app-menu">
+        <a class="btn btn-primary btn-lg btn-block" data-transition="fade" href="#page-1">Page 1</a>
+        <a class="btn btn-primary btn-lg btn-block" data-transition="slide" href="#page-2">Page 2</a>
+        <a class="btn btn-primary btn-lg btn-block bottom-btn" data-transition="slideup" href="#page-3">Page 3</a>
+    </div>
+
+    <div class="ui-mobile-viewport ui-overlay-a page-container">
+        <!-- Insert pages here -->
+        <div data-role="page" id="page-1">
+            <div role="main" class="ui-content">
+            <!-- Standard button -->
+            <button type="button" class="btn btn-default">（默认样式）Default</button>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary">（首选项）Primary</button>
+            </div>
+        </div>
+        <div data-role="page" id="page-2">
+            <div role="main" class="ui-content">
+            <!-- Indicates a successful or positive action -->
+            <button type="button" class="btn btn-success">（成功）Success</button>
+            <!-- Contextual button for informational alert messages -->
+            <button type="button" class="btn btn-info">（一般信息）Info</button>
+            <!-- Indicates caution should be taken with this action -->
+            <button type="button" class="btn btn-warning">（警告）Warning</button>
+            </div>
+        </div>
+        <div data-role="page" id="page-3">
+            <div role="main" class="ui-content">
+            <!-- Indicates a dangerous or potentially negative action -->
+            <button type="button" class="btn btn-danger">（危险）Danger</button>
+            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+            <button type="button" class="btn btn-link">（链接）Link</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
