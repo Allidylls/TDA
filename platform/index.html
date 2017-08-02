@@ -21,38 +21,42 @@
         <h1>Touch Device App Template</h1>
     </header>
 
-    <div class="app-menu">
-        <a class="btn btn-primary btn-lg btn-block" data-transition="fade" href="#page-1">Page 1</a>
-        <a class="btn btn-primary btn-lg btn-block" data-transition="slide" href="#page-2">Page 2</a>
-        <a class="btn btn-primary btn-lg btn-block bottom-btn" data-transition="slideup" href="#page-3">Page 3</a>
-    </div>
-
     <div class="ui-mobile-viewport ui-overlay-a page-container">
+        <div data-role="page" id="page-home">
+            <div role="main" class="ui-content">
+                <div data-app-page="#page-app-demo" class="app-launch-icon pull-left">
+                    <img src="img/app-icon.png" alt="App Name">
+                    <p>App Name</p>
+                </div>
+                <div data-app-page="#page-app-demo" class="app-launch-icon pull-left">
+                    <img src="img/app-icon.png" alt="App Name">
+                    <p>App Name</p>
+                </div>
+                <div data-app-page="#page-app-demo" class="app-launch-icon pull-left">
+                    <img src="img/app-icon.png" alt="App Name">
+                    <p>App Name</p>
+                </div>
+                <div data-app-page="#page-app-demo" class="app-launch-icon pull-left">
+                    <img src="img/app-icon.png" alt="App Name">
+                    <p>App Name</p>
+                </div>
+                <div data-app-page="#page-app-demo" class="app-launch-icon pull-left">
+                    <img src="img/app-icon.png" alt="App Name">
+                    <p>App Name</p>
+                </div>
+            </div>
+        </div>
+        
         <!-- Insert pages here -->
-        <div data-role="page" id="page-1">
+        <div data-role="page" id="page-app-demo">
             <div role="main" class="ui-content">
-            <!-- Standard button -->
-            <button type="button" class="btn btn-default">（默认样式）Default</button>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary">（首选项）Primary</button>
-            </div>
-        </div>
-        <div data-role="page" id="page-2">
-            <div role="main" class="ui-content">
-            <!-- Indicates a successful or positive action -->
-            <button type="button" class="btn btn-success">（成功）Success</button>
-            <!-- Contextual button for informational alert messages -->
-            <button type="button" class="btn btn-info">（一般信息）Info</button>
-            <!-- Indicates caution should be taken with this action -->
-            <button type="button" class="btn btn-warning">（警告）Warning</button>
-            </div>
-        </div>
-        <div data-role="page" id="page-3">
-            <div role="main" class="ui-content">
-            <!-- Indicates a dangerous or potentially negative action -->
-            <button type="button" class="btn btn-danger">（危险）Danger</button>
-            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-            <button type="button" class="btn btn-link">（链接）Link</button>
+                <a href="#page-home"><span class="glyphicon glyphicon-menu-left"></span> Back</a>
+                <div class="jumbotron">
+                    <h1>Hello, Demo TDA!</h1>
+                    <p>Touch device app template using Electron, jQuery Mobile and Bootstrap.</p>
+                    <p><a class="btn btn-primary btn-lg"
+                        href="https://github.com/allidylls/tda">Learn more</a></p>
+                </div>
             </div>
         </div>
     </div>

@@ -5,9 +5,11 @@ if (window.module) {
 
 // prepare for loading jquery mobile
 $(document).on("mobileinit", function () {
+    $.mobile.defaultPageTransition = 'none';
+    
     // reset this to get rid of extra 1px of height during page transitioning
     $.mobile.defaultHomeScroll = 0;
-
+    
     // use height of page container
     $.mobile.getScreenHeight = function () {
         // Native innerHeight returns more accurate value for this across platforms,

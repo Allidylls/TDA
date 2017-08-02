@@ -9,17 +9,18 @@ let win;
 function createWindow() {
     // Create the browser window.
     win = new BrowserWindow({
-        width: 800,
-        height: 600
+        width: 1000,
+        height: 618
     });
 
     // and load the index.html of the app.
-    /*win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, '../build/index.html'),
         protocol: 'file:',
         slashes: true
-    }));*/
-    win.loadURL('http://127.0.0.1:3000/index.html');
+    }));
+    // It also can be loaded from a remote web server
+    //win.loadURL('https://remote.host/index.html');
 
     // Open the DevTools.
     win.webContents.openDevTools();
@@ -55,12 +56,13 @@ app.on('activate', () => {
     }
 });
 
+// communicate with remote app via ipc
 ipcMain.on('asynchronous-message', (event, arg) => {
-  console.log(arg)  // prints "ping"
-  event.sender.send('asynchronous-reply', 'pong async')
-})
+    console.log(arg);  // prints "ping"
+    event.sender.send('asynchronous-reply', 'pong async');
+});
 
 ipcMain.on('synchronous-message', (event, arg) => {
-  console.log(arg)  // prints "ping"
-  event.returnValue = 'pong'
-})
+    console.log(arg);  // prints "ping"
+    event.returnValue = 'pong';
+});

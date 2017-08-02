@@ -23,6 +23,7 @@ build:
 	cp platform/style.css $(BUILD_DIR)/style.css
 	cp -r platform/js $(BUILD_DIR)/js
 	cp -r platform/lib $(BUILD_DIR)/lib
+	cp -r platform/img $(BUILD_DIR)/img
 
 .PHONY: clean
 clean:
@@ -30,6 +31,7 @@ clean:
 	rm -f $(BUILD_DIR)/style.css
 	rm -rf $(BUILD_DIR)/js
 	rm -rf $(BUILD_DIR)/lib
+	rm -rf $(BUILD_DIR)/img
 
 .PHONY: rebuild
 rebuild: clean build
